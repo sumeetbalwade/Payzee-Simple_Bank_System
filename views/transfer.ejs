@@ -1,45 +1,55 @@
 <%- include("partials/header"); -%>
 
-<div class="alltransactions">
-  <div class="container add-form">
-    <form action="/transfer" method="POST">
-      <input type="hidden" name="id" value="<%=id%>" class="form-control" />
-      <div class="form-group">
-        <label for="exampleInputEmail1">Name</label>
-        <input
-          type="text"
-          name="name"
-          value="<%=name%>"
-          class="form-control"
-          readonly
-        />
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input
-          type="email"
-          name="email"
-          value="<%=email%>"
-          class="form-control"
-          readonly
-        />
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Balance</label>
-        <input
-          type="text"
-          name="balance"
-          value="<%=balance%>"
-          class="form-control"
-          readonly
-        />
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Amount</label>
-        <input type="text" name="amount" class="form-control" />
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+<div
+  class="alltransactions"
+  style="
+    background-image: url('https://images.pexels.com/photos/399161/pexels-photo-399161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 100vh;
+    background-size: cover;
+  "
+>
+  <div class="container add-form-transfer" style="padding-top: 10%">
+    <h1>Transfer</h1>
+    <div class="row">
+      <form action="/transfer" method="POST" class="col-5">
+        <input type="hidden" name="id" value="<%=id%>" class="form-control" />
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input
+            type="text"
+            name="name"
+            value="<%=name%>"
+            class="form-control"
+            readonly
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            name="email"
+            value="<%=email%>"
+            class="form-control"
+            readonly
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Balance</label>
+          <input
+            type="text"
+            name="balance"
+            value="<%=balance%>"
+            class="form-control"
+            readonly
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Amount</label>
+          <input type="text" name="amount" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
   </div>
 </div>
 

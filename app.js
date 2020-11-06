@@ -27,8 +27,8 @@ const userTemplate = {
 };
 
 const transactionTemplate = {
-  name: { type: String, required: true },
-  email: { type: String, required: true },
+  name: { type: String },
+  email: { type: String },
   amount: Number,
 };
 

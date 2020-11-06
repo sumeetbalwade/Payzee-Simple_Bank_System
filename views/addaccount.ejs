@@ -2,21 +2,23 @@
 <div class="addaccount">
   <div class="container add-form">
     <h1>Add User</h1>
-    <form action="/addAccount" method="POST">
-      <div class="form-group">
-        <label for="exampleInputEmail1">Name</label>
-        <input type="text" name="name" class="form-control" />
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" name="email" class="form-control" />
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Amount</label>
-        <input type="text" name="balance" class="form-control" />
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <div class="row">
+      <form action="/addAccount" method="POST" class="col-5">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="text" name="name" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" name="email" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Amount</label>
+          <input type="text" name="balance" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
   </div>
 </div>
 
