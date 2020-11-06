@@ -1,0 +1,27 @@
+<%- include("partials/header"); -%>
+
+<div class="alltransactions">
+  <div class="container add-form-table">
+    <h1>Transactions</h1>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% transactions.forEach(function(transaction){ %>
+        <tr>
+          <th scope="row"><%=transaction.name%></th>
+          <td><%=transaction.email%></td>
+          <td><%=transaction.amount%></td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>

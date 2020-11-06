@@ -1,0 +1,32 @@
+<%- include("partials/header"); -%>
+<div id="allaccount">
+  <div class="container add-form-table">
+    <h1>Accounts</h1>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Balance</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% user.forEach(function(user){ %>
+        <tr>
+          <th scope="row"><%=user.name%></th>
+          <td><%=user.email%></td>
+          <td><%=user.balance%></td>
+          <td>
+            <button type="button" class="btn btn-danger">
+              <a href="/transfer/<%=user._id%>">Transfer</a>
+            </button>
+          </td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>

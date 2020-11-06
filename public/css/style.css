@@ -1,0 +1,36 @@
+.c-image {
+  width: 100%;
+  height: 90vh;
+}
+
+.add-form {
+  height: 100vh;
+  padding-top: 10%;
+  width: fit-content;
+  color: white;
+}
+.add-form-table {
+  height: 100vh;
+  padding-top: 6%;
+  color: black;
+  text-align: center;
+}
+
+.alltransactions {
+  background-image: url('https://images.pexels.com/photos/399161/pexels-photo-399161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+}
+
+#allaccount {
+  background-image: url('https://images.pexels.com/photos/509922/pexels-photo-509922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+}
+
+.addaccount {
+  background-image: url('https://images.pexels.com/photos/5400775/pexels-photo-5400775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
